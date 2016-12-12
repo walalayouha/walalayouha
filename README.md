@@ -1,0 +1,393 @@
+# walalayouha<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	    html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+		body{
+			background-image: url(file:///C|/Users/MC/Desktop/mytest/img/bg5.jpg);
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;
+			font-family: 'Open Sans','helvetica',arial,sans-serif;
+			font-weight: 300;
+			color: #62686f
+		}
+		.tou{
+			background-image: url(file:///C|/Users/MC/Desktop/mytest/img/banner.jpg);
+			margin-top: 100px;padding: 1px;
+		}
+		.container{
+			width: 960px;
+			margin: 0 auto;
+		}
+		.centered-image{
+			display: block;
+			margin: 0 auto;
+			border-radius: 999px;
+			margin-top: -70px;
+			margin-bottom: 10px;
+			box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+			border: 3px solid white;
+		}
+		.tou h1{
+			text-align: center;font-weight: 300;font-size: 50px;font-family: 'Open Sans','helvetica',arial,sans-serif;text-shadow: 0 1px rgba(0,0,0,0.3);color: white;margin-bottom: 20px;
+		}
+		.nav{
+			text-align: center;
+			list-style: none;
+			padding: 0;margin: 0;
+			background-color: #333
+		}
+		.nav ul{
+			padding: 0;margin: 0;
+		}
+		.nav ul li{
+			display: inline;
+			padding: 15px;margin: 10px;
+		}
+		.nav ul li a{
+			color: #fff;
+			font-size: 0.9em;
+			font-weight: 300;
+			text-decoration: none;
+		}
+		.info-section{
+			background-color: #fff;
+			padding:20px;margin: 50px;
+			
+		}
+		.info-section header h2 {
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+
+        }
+        .info-section--description{
+        	font-style: italic;
+        	text-align: center;
+        }
+		.whatido_skill-list{
+			list-style: none;margin: 0;padding: 0;overflow: hidden;
+			margin-top: 60px;
+		}
+		.whatido_skill-list--code{
+			background-image: url(img/skill-code.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			width: 33%;
+			float: left;overflow: hidden;
+		}
+		.whatido_skill-list--design{
+			background-image: url(img/skill-design.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			width: 33%;
+			float: left;overflow: hidden;
+		}
+		.whatido_skill-list--product{
+			background-image: url(img/skill-product.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			width: 33%;
+			float: left;
+			overflow: hidden;
+		}
+		.whatido_skill-list--code h3{
+			text-align: center;
+			margin-top: 120px;
+			
+			
+		}
+		.whatido_skill-list--design h3{
+			text-align: center;
+			margin-top: 120px;
+			
+		}
+		.whatido_skill-list--product h3{
+			text-align: center;
+			margin-top: 120px;
+			
+		}
+		.main_exerpience-image{
+			float: left;width: 180px;padding-right: 30px;
+		}
+		.main_exerpience-content{
+			overflow: hidden;
+		}
+		.main_exerpience h2{
+			text-align: center;
+			font-size: 300;
+		}
+		.photos h2{
+			text-align: center;
+		}
+		.photos-list li img{
+			width: 100%;
+		}
+		.photos-list{
+			list-style: none;			
+			padding: 0;margin-top: 0;
+			width: 640px;margin-left: 10%;
+			overflow: hidden;
+		}
+		.photos-list li{
+			width: 22%;
+			float: left;
+			padding: 10px;	
+
+		}
+		.get-in-touch_list{
+			list-style: none;margin: 0;padding: 0;
+			overflow: hidden;margin-top: 60px;
+		}
+		.get-in-touch_list-Facebook{
+			background-image: url(img/fb-icon.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			width: 24%;overflow: hidden;
+			float: left;padding: 10px;margin: 2px;
+		}
+		.get-in-touch_list-Twitter{
+			background-image: url(img/twitter-icon.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			width: 24%;overflow: hidden;
+			float: left;padding: 10px;margin: 2px;
+		}
+		.get-in-touch_list-Email{
+			background-image: url(img/email-icon.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			width: 24%;overflow: hidden;
+			float: left;padding: 10px;margin: 2px;
+		}
+		.get-in-touch_list-Linkedin{
+			background-image: url(img/linkedin-icon.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			width: 24%;overflow: hidden;
+			float: left;padding: 10px;margin: 2px;
+		}
+		.get-in-touch_list-Facebook p{
+			text-align: center;margin-top: 180px;
+		}
+		.get-in-touch_list-Twitter p{
+			text-align: center;margin-top: 180px;
+		}
+		.get-in-touch_list-Email p{
+			text-align: center;margin-top: 180px;
+		}
+		.get-in-touch_list-Linkedin p{
+			text-align: center;margin-top: 180px;
+		}
+		.get-in-touch h2{
+			text-align: center;
+		}
+		.contact input,
+        .contact textarea {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact button {
+            border: none;
+            border-radius: 9999px;
+
+            background: #ffd524;
+
+            cursor: pointer;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+            color: #fff;
+            box-shadow: 0 3px 0 #daae1d;
+        }
+        .contact form{
+        	width: 40%;padding: 8px ;position: relative;margin: 0 auto;
+        }
+        
+        .contact  h2 {font-size: 22px;}
+        .contact form input,.contact form button{padding: 8px;margin-bottom:16px;width: 100%;}
+        .name{
+        	 position: absolute;
+             top: 80px;
+             left: -18%;
+             width: 100%;
+        }
+        .email{
+        	position: absolute;
+        	top: 130px;
+        	left: -18%;
+        	width: 100%;
+        }
+        .message{
+        	position: absolute;
+        	top: 180px;
+        	left: -26%;
+        	width: 100%;
+        }
+        
+		/*.contact form{
+			width: 40%;position: relative;
+			margin: 0 auto;
+		}
+		.contact input{
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+		
+        .contact form input,.contact form button{padding: 8px;margin-bottom:16px;width: 100%;}
+		
+		.contact  h2 {font-size: 20px;margin-left: 35%;}
+        .contact form{width: 100%;}
+        
+		.contact button{
+		    border: none;
+            border-radius: 9999px;
+
+            background: #ffd524;
+
+            cursor: pointer;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+            color: #fff;
+            box-shadow: 0 3px 0 #daae1d;
+		}
+		.box{
+			position: relative;
+		}
+		.align-left{
+			position: absolute;
+			left: -10%;
+			top: 0;
+			width: 100%;
+		}*/
+		h1, h2, h3, h4, h5, h6 {
+            color: #333;
+            font-weight: 300;
+        }
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<header class="tou">
+		<img src="img/teng.jpg" class="centered-image">
+		<h1>I am Teng</h1>
+	</header>
+	<div class="nav">
+	<ul>
+		<li class="nav_item"><a href="#">work</a></li>
+		<li class="nav_item"><a href="#">experience</a></li>
+		<li class="nav_item"><a href="#">photos</a></li>
+		<li class="nav_item"><a href="#">contact</a></li>
+		</ul>
+	</div>
+	<section class="info-section whatido">
+		<header>
+			<h2>WHAT I DO</h2>
+			<p class="info-section--description">I'm Teng. I design and develop things on the web. Oh, and I like curry.</p>
+		</header>
+		<ul class="whatido_skill-list">
+			<li class="whatido_skill-list--code">
+				<h3>Code</h3>
+				<p>I like building things on the web. I've built games, tools, and web apps.</p>
+			</li>
+			<li class="whatido_skill-list--design">
+				<h3>Desiner</h3>
+				<p>I like creating happiness by making things look good and work well.</p>
+			</li>
+			<li class="whatido_skill-list--product">
+				<h3>Product</h3>
+				<p>I like taking products from idea to reality to users and beyond!</p>
+			</li>
+		</ul>
+	
+	<div class="info-section main_exerpience">
+	<h2>EDUCATION <span>&amp;</span> EXPERIENCE</h2>
+		<img src="img/strikingly-logo.png" class="main_exerpience-image">
+		<article class="main_exerpience-content">
+			<p>Strikingly</p>
+			<p>Cofounder, 2012 - Present</p>
+			<p>Strikingly is a website builder that's simple, beautiful, and fun. And perfect for the age of mobile. I'm in charge of UI/UX and front-end.</p>
+			<p>Strikingly is a website builder that's simple, beautiful, and fun. And perfect for the age of mobile. I'm in charge of UI/UX and front-end.</p>
+			<p>Strikingly is a website builder that's simple, beautiful, and fun. And perfect for the age of mobile. I'm in charge of UI/UX and front-end.</p>
+		</article>
+		<img src="img/echo-rocket.jpg" class="main_exerpience-image">
+		<article class="main_exerpience-content">
+			<p>Freelance Web/Game Developer</p>
+
+            <p>2007 - 2012</p>
+
+            <p>EchoRocket was my one-man Flash game studio and web development/design consultancy. I built Spinblaster, Block Knocker, CampusAmp, HireBrite, and more!</p>
+
+            <p>EchoRocket was my one-man Flash game studio and web development/design consultancy. I built Spinblaster, Block Knocker, CampusAmp, HireBrite, and more!</p>
+
+            <p>EchoRocket was my one-man Flash game studio and web development/design consultancy. I built Spinblaster, Block Knocker, CampusAmp, HireBrite, and more!</p>
+		</article>
+		<img src="img/u-of-chicago.jpg" class="main_exerpience-image">
+		<article class="main_exerpience-content">
+			<p>University of Chicago</p>
+
+            <p>BA Economics, 2008-2012</p>
+
+            <p>Studying the finer points of firms, markets, finance, decision theory, and supply and demand.</p>
+
+            <p>Studying the finer points of firms, markets, finance, decision theory, and supply and demand.</p>
+
+            <p>Studying the finer points of firms, markets, finance, decision theory, and supply and demand.</p>
+		</article>
+		</div>
+		<div class="info-section photos">
+		<header>
+		<h2>Photos</h2>
+		<p class="info-section--description">Some pics from my travels!</p>
+		</header>
+		<ul class="photos-list">
+			<li><img src="img/p01.jpg" ></li>
+			<li><img src="img/p02.jpg" ></li>
+			<li><img src="img/p03.jpg" ></li>
+			<li><img src="img/p04.jpg" ></li>
+			<li><img src="img/p05.jpg" ></li>
+			<li><img src="img/p06.jpg" ></li>
+			<li><img src="img/p07.jpg" ></li>
+			<li><img src="img/p08.jpg" ></li>
+			</ul>
+		
+	</div>
+	<div class="info-section get-in-touch">
+		<h2>Get In Touch</h2>
+		<ul class="get-in-touch_list">
+			<li class="get-in-touch_list-Facebook"><p>Facebook</p></li>
+			<li class="get-in-touch_list-Twitter"><p>Twitter</p></li>
+			<li class="get-in-touch_list-Email"><p>Email</p></li>
+			<li class="get-in-touch_list-Linkedin"><p>Linkedin</p></li>
+		</ul>
+	</div>
+	<div class="info-section contact">
+	<form class="box">
+		<h2>OR LEAVE A MESSAGE</h2>
+		<input name="name" id="name" type="text">
+		
+		<label class="name">Name</label>
+		
+		<input name="email" id="email" type="text">
+		
+		<label class="email">Email</label>
+		
+		<input name="message" id="message" type="text">
+		
+		<label class="message">Message</label>
+		<button type="button">Submit</button>
+	</form>
+	</div>
+	</section>
+</div>
+	
+
+</body>
+</html>
